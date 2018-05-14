@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/sample_db
+    username: test_user
+    password: test_user
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+  messages:
+    basename: messages
+    cache-seconds: -1
+    encoding: UTF-8
+endpoints:
+  enabled: true
