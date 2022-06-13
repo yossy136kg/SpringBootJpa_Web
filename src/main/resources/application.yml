@@ -6,7 +6,7 @@ spring:
     cache: false
   datasource:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost/sample_db
+    url: jdbc:mysql://localhost/sample_db?useSSL=false&characterEncoding=UTF-8
     username: test_user
     password: test_user
   jpa:
